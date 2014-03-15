@@ -1,0 +1,10 @@
+<div class="col-lg-3 playerBlock" ng-show="playerInit">
+	<!--Play/pause button-->
+  <button ng-show="playing" ng-click="stop()" class="pull-right btn btn-primary">Stop</button>
+  <button ng-hide="playing" ng-click="play()" class="pull-right btn btn-primary">Play</button>
+  <h5>Volume: {{(audio.volume | number:1)*10}}</h5>
+  <!--Volume buttons-->
+  <button ng-click="volumePlus()" class="pull-right btn btn-primary">Vol +</button>
+  <button ng-click="volumeMinus()" class="pull-right btn btn-primary">Vol -</button>
+  <h4>Station: {{playTitle}}</h4>
+</div>

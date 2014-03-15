@@ -1,0 +1,6 @@
+<!--Show categories of stations-->
+<h3>
+  <span ng-click="setGenre('')" class="label label-info genreLabel">All</span> 
+  <span ng-repeat="genre in genres" ng-click="setGenre(genre)" class="label label-info genreLabel">{{genre}}</span>
+</h3>
+<hr>

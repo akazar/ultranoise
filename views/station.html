@@ -1,0 +1,10 @@
+<!--Show all stations-->
+<div ng-repeat="(id,program) in stations | filter:{'genre': genreForFilter} | startFrom:(currentPage-1)*itemsPerPage | limitTo:itemsPerPage" ng-click="setAndPlay(program.url,program.title)" class="col-md-3 portfolio-item img-wrap">  
+  <div class="img-wrap">
+    <img class="img-responsive" src="{{program.logo}}" style="margin: 0;">
+    <div class="img-info">
+      <h4>{{program.title}}</h4>
+      <p><small>{{program.genre}}</small></p>
+    </div>
+  </div>
+</div>
